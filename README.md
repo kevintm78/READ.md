@@ -62,3 +62,15 @@ Above fix works. Just in case it doesn't, installing these pkgs should work.
 * [Google kernel source for v3.10.y](https://kernel.googlesource.com/pub/scm/linux/kernel/git/stable/linux/+/refs/heads/linux-3.10.y)
 * [Repo and git references](https://gerrit.googlesource.com/git-repo/+/refs/heads/master/docs/manifest-format.md#XML-File-Format)
 * [All things Repo](https://gerrit.googlesource.com/git-repo/+/refs/heads/master/README.md)
+
+
+**bashrc additions**
+
+      export ALLOW_FILE_DISCOVERY=1
+      export USE_CCACHE=1
+      export CCACHE_EXEC=$(command -v ccache)
+      export PATH="~/android-studio/jre/bin:$PATH" #for building Magisk
+      export ANDROID_SDK_ROOT="~/Android/Sdk"
+      export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4g" #this is for my lack of ram
+      export OUT_DIR_COMMON_BASE="path to aosp build"
+      
