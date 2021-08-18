@@ -62,6 +62,7 @@ Above fix works. Just in case it doesn't, installing these pkgs should work.
 * [Google kernel source for v3.10.y](https://kernel.googlesource.com/pub/scm/linux/kernel/git/stable/linux/+/refs/heads/linux-3.10.y)
 * [Repo and git references](https://gerrit.googlesource.com/git-repo/+/refs/heads/master/docs/manifest-format.md#XML-File-Format)
 * [All things Repo](https://gerrit.googlesource.com/git-repo/+/refs/heads/master/README.md)
+* [AICP Read.me](https://github.com/AICP/platform_manifest/tree/r11.1#android-ice-cold-project) -great explanation of repo sync options and using gerrit.
 
 
 **bashrc additions**
