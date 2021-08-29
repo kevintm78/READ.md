@@ -35,11 +35,6 @@ May need this:
 * UberTC's prebuilt toolchain:
 
       git clone https://bitbucket.org/UBERTC/arm-eabi-4.8.git
-
-* Building with CCACHE
-
-      export USE_CCACHE=1
-      export CCACHE_EXEC=$(command -v ccache)
     
 **Python Errors**
 
@@ -49,29 +44,13 @@ Above fix works. Just in case it doesn't, installing these pkgs should work.
 
     sudo apt-get install python2.7 python-all
 
-**Links to all info on Android. Plus some ones that interest me.** 
-* [Android Source](https://source.android.com/) -- All the answers are here.
-* [Anykernel3](https://github.com/osm0sis/AnyKernel3.git) && [Android Image Kitchen](https://github.com/osm0sis/Android-Image-Kitchen.git) from @osm0sis rep0s
-* [Magisk](https://github.com/topjohnwu/Magisk.git) -where all the Magisk happens.
-* [OpenGapps](https://github.com/opengapps/opengapps.git) -my new obsession
-* [AOSP-Mirror Links](https://aosp-mirror.github.io/)
-* [XDA](https://www.xda-developers.com/)
-* [Samsung Source Code](https://opensource.samsung.com)
-* [Manpages for xz compression](http://http://manpages.org/xz)
-* [Kernel.org commit tree v3.10.y](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/log/?h=linux-3.10.y)
-* [Google kernel source for v3.10.y](https://kernel.googlesource.com/pub/scm/linux/kernel/git/stable/linux/+/refs/heads/linux-3.10.y)
-* [Repo and git references](https://gerrit.googlesource.com/git-repo/+/refs/heads/master/docs/manifest-format.md#XML-File-Format)
-* [All things Repo](https://gerrit.googlesource.com/git-repo/+/refs/heads/master/README.md)
-* [AICP Read.me](https://github.com/AICP/platform_manifest/tree/r11.1#android-ice-cold-project) -great explanation of repo sync options and using gerrit.
-* [Github Documentatation](https://docs.github.com)
+__[lynx.md](https://github.com/kevintm78/READ.md/files/7072568/lynx.md)
+.bashrc additions__
 
-**bashrc additions**
-
-      export ALLOW_FILE_DISCOVERY=1
-      export USE_CCACHE=1
-      export CCACHE_EXEC=$(command -v ccache)
-      export PATH="~/android-studio/jre/bin:$PATH" #for building Magisk
-      export ANDROID_SDK_ROOT="~/Android/Sdk"
-      export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4g" #this is for my lack of ram
-      export OUT_DIR_COMMON_BASE="path to aosp build"
-      
+```
+export ALLOW_FILE_DISCOVERY=1
+export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
+export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4g"  #this is for my lack of ram
+export OUT_DIR_COMMON_BASE=""$HOME/path/me/the/salt"
+export USE_CCACHE=1  #Android 9 and below just needs this one
+export CCACHE_EXEC=$(command -v ccache)  #Android 10+ requires this line as well
