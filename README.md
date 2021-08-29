@@ -44,8 +44,7 @@ Above fix works. Just in case it doesn't, installing these pkgs should work.
 
     sudo apt-get install python2.7 python-all
 
-__[lynx.md](https://github.com/kevintm78/READ.md/files/7072568/lynx.md)
-.bashrc additions__
+**.bashrc additions**
 
 ```
 export ALLOW_FILE_DISCOVERY=1
