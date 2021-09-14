@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="triplr-dev" fetch="https://github.com/triplr-dev" />
+  <remote name="kevintm78" fetch="https://github.com/kevintm78" />
+  <remote name="lineageos" fetch="https://github.com/lineageos" />
+  <remote name="mr" fetch="https://github.com/modestrepo" />
+
+  <project name="android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="lineageos" revision="lineage-18.1" />
+  <project name="android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="lineageos" revision="lineage-18.1" />		
+
+ 
+
+<!-- trlte Specific -->
+  <project name="android_hardware_samsung" path="hardware/samsung" remote="lineageos" revision="lineage-18.1" />
+  <project name="android_device_samsung_trlte-common" path="device/samsung/trlte-common" remote="kevintm78" revision="lineage-17.1" />
+  <project name="android_device_samsung_trlte" path="device/samsung/trlte" remote="kevintm78" revision="lineage-17.1" />
+
+<!-- Kernel -->
+  <project name="android_kernel_samsung_apq8084" path="kernel/samsung/apq8084" remote="lineageos" revision="lineage-17.1" />
+
+<!--  Vendor -->
+  <project name="proprietary_vendor_samsung" path="vendor/samsung" remote="triplr-dev" revision="lineage-16.0" />
+
+</manifest>
