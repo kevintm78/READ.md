@@ -1,19 +1,3 @@
-#### Samsung has removed the download for some legacy devices including most of the trlte variants. The initial tag is an untouched upload of the kernel.zip for the SM-N910V. [Mirror](https://www.androidfilehost.com/?fid=14943124697586354076) of the original zip from Samsung.
-
-###### ***I'm not a developer nor do I have any formal education regarding Android development (or anything else). These notes are here just for convenience. Some information could be inaccurate and I welcome any input/corrections.***
-___________________________________________________________________________________________________________________________________________________________
-
-**Kernel Specs**
-* Linux kernel v.3.10.40
-* Device = trltevzw
-* Firmware = N910VVRU2CQL1
-* Recommended Toolchain = arm-eabi-4.8
-__________________________________________________________________________________________________________________________________________________________
-
-* Google's prebuilt gcc arm-eabi-4.8 toolchain (mirror):
-
-      git clone git@github.com:kevintm78/arm-eabi-4.8.git
-
 * Build Tools
 
       sudo apt install git-core ccache automake lzop bison gperf build-essential zip curl zlib1g-dev g++-multilib python3-networkx libxml2-utils bzip2 libbz2-dev libbz2-1.0 libghc-bzlib-dev squashfs-tools pngcrush schedtool dpkg-dev liblz4-tool make optipng gnupg flex libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig libncurses5 libtinfo5
@@ -21,7 +5,13 @@ ________________________________________________________________________________
 * [AOSP guide](https://source.android.com/setup/build/initializing) for setting up your build environment.
 ________________________________________________________________________________________________________________________________________________________
 
-#### Fix for "/usr/bin/env 'python' no such file or directory"
+## Troubleshoot my common problems
+
+**git errors**
+* "fatal: remote origin already exists." - [Solution](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
+
+
+**Fix for "/usr/bin/env 'python' no such file or directory"**
 
 * [AOSP suggestion](https://source.android.com/setup/build/downloading#initializing-a-repo-client)
   If your Ubuntu 20.04.2 LTS is a newly installed (vs. upgraded) Linux version:
