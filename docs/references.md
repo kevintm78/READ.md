@@ -1,0 +1,22 @@
+**@osm0sis**
+* [Anykernel3](https://github.com/osm0sis/AnyKernel3.git)
+* [Android Image Kitchen](https://github.com/osm0sis/Android-Image-Kitchen.git)
+* [Odds and End thread](https://forum.xda-developers.com/t/tools-zips-scripts-osm0sis-odds-and-ends-multiple-devices-platforms.2239421/)
+
+### References, Links, etc.
+* [AOSP: build environment setup](https://source.android.com/setup/build/initializing)
+* [Android Source](https://source.android.com/)
+* [AOSP-Mirror Links](https://aosp-mirror.github.io/)
+* [XDA](https://www.xda-developers.com/)
+* [Samsung Source Code](https://opensource.samsung.com)
+* [OpenGapps](https://github.com/opengapps/opengapps.git)
+* [Kernel.org commit tree v3.10.y](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/log/?h=linux-3.10.y)
+* [Google kernel source for v3.10.y](https://kernel.googlesource.com/pub/scm/linux/kernel/git/stable/linux/+/refs/heads/linux-3.10.y)
+* [Repo: README.md](https://gerrit.googlesource.com/git-repo/+/refs/heads/master/README.md)
+* [AICP: Read.me](https://github.com/AICP/platform_manifest/tree/r11.1#android-ice-cold-project)
+* [AOSP-Mirror Links](https://aosp-mirror.github.io/)
+* [Repo and git references](https://gerrit.googlesource.com/git-repo/+/refs/heads/master/docs/manifest-format.md#XML-File-Format)
+* [Github Documentatation](https://docs.github.com)
+* [Magisk](https://github.com/topjohnwu/Magisk.git)
+* [Magisk Documentation](https://topjohnwu.github.io/Magisk)
+* [Manpages for xz compression](http://http://manpages.org/xz)
